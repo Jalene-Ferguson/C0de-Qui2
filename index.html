@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Code Quiz</title>
+</head>
+<body>
+    <header>
+        <h4 id="scores-btn">View high scores</h4>
+        <h4 class="timer">Time: <span id="timer"></span></h4>
+    </header>
+<section id="container-start" class="show">
+    <h1>Coding Quiz Challenge</h1>
+    <p>
+        Try to answer the following code-related questions within the time limit. Keep in mind that the incorrect answers will penalize your score/time by ten seconds!
+    </p>
+    <button class="btn-start" id="start">Start Quiz</button>
+</section>
+<section id="question-container" class="hide">
+    <div class="container-questions">
+    <div id="question"></div>
+    <div id="answer-buttons" class="grid-btn"></div>
+    </div>
+</section>
+<section id="end-container" class="hide">
+    <div class="box-end">
+        <div id="score-banner">
+            <h1>All Done!</h1>
+        </div>
+        <form id="initial-form" class="intiials">
+            <p> Enter Initials:
+                <input type="text" name="intiials" id="intiials" class="text-input" />
+                <button class="btn-start" id="submit-score" type="submit">Submit</button></p>
+        </form>
+    </div>
+</section>
+<section id="high-score" class="hide">
+    <div class="high-score-box">
+    <h1>High scores</h1>
+    <ol id="score-list"></ol>
+    <div>
+        <button class="btn" id="back">Go Back</button>
+        <button class="btn" id="clear-scores">Clear High Scores</button>
+    </div>
+    </div>
+</section>
+<div class="hide" id="correct">
+    <h2>Correct!</h2>
+</div>
+<div class="hide" id="incorrect">
+    <h2>Incorrect</h2>
+</div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>

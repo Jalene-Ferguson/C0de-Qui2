@@ -1,0 +1,82 @@
+:root {
+    --bgc:#18002E;
+    --bc:#50009F;
+    --lc:#FF00FF;
+    --qc:#FFD700;
+    --c:#5F5FFF
+}
+
+body {
+    background: var(--c);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+}
+
+#scores-btn:hover {
+    cursor: pointer;
+    color: var(--bc);
+}
+
+header h4 {
+    padding-left: 20px;
+    font-size: 2rem;
+    display: inline;
+}
+
+.timer {
+    font-size: 2rem;
+    color: var(--bc);
+    display: inline;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.container {
+    padding: 20px;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    color: var(--qc);
+}
+
+p {
+    color: var(--bgc);
+}
+
+.start {
+    align-items: center;
+    text-align: center;
+}
+
+.start h1, .start p {
+    text-align: center;
+}
+
+.question {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    margin: auto;
+}
+
+.end h1, .end p {
+    text-align: left;
+}
+
+.end input {
+    outline: thick;
+    padding: 5px;
+    width: 35%;
+    border-width: 1px;
+    font-size: 2.2rem;
+    border-radius: 5px;
+}
+
